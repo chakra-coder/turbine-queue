@@ -8,3 +8,12 @@
 4. R: Yes, off course
 
 
+
+## Example
+
+```java
+TurbineQueue turbineQueue = TurbineQueue.getInstance();
+turbineQueue.addQueue("testqueue");
+
+
+
