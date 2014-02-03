@@ -112,6 +112,14 @@ public class TurbineQueue  {
 
     }
 
+    public boolean removeQueueListener(String queueName, Object obj)
+    {
+        queueName = queueName.toUpperCase();
+
+
+        return listeners.get(queueName).remove(obj);
+    }
+
     public synchronized boolean sendMessage(String queueName, Message message)
     {
         queueName = queueName.toUpperCase();

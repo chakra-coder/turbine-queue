@@ -58,6 +58,8 @@ public class ThreadProcess implements Runnable {
 
                 if (message != null)
                 {
+
+                   // log(Level.INFO, "Received message %s", message);
                     if (message.isReplyToSender())
                         processMessageWithReply(message);
                     else
@@ -130,8 +132,6 @@ public class ThreadProcess implements Runnable {
                     listener.onReply(queueName, message);
 
             }
-
-
         }
         else
         {
@@ -161,6 +161,7 @@ public class ThreadProcess implements Runnable {
     protected void logException(Exception ex, String text, Object ... args)
     {
         logger.log(Level.FATAL, String.format("Exception encurred\r\n %s ==> %s",String.format(text, args), ex.getMessage()));
+        ex.printStackTrace();
     }
 
 }

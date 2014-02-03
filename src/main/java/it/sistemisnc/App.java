@@ -3,10 +3,12 @@ package it.sistemisnc;
 import it.sistemisnc.turbine.TurbineQueue;
 import it.sistemisnc.turbine.data.Message;
 import it.sistemisnc.turbine.listeners.IQueueListener;
+import it.sistemisnc.turbine.utils.AsyncListener;
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 
+import java.util.Random;
 import java.util.UUID;
 
 /**
@@ -41,12 +43,7 @@ public class App implements IQueueListener
         turbineQueue.addQueueListener("testqueue", this);
 
 
-        for (int i=0; i<100;i++)
-        {
-                turbineQueue.sendMessage("testqueue", new Message(UUID.randomUUID().toString()));
 
-
-        }
 
         Message message = new Message(UUID.randomUUID().toString());
         message.setSenderClass(this.getClass().getName());
@@ -55,8 +52,13 @@ public class App implements IQueueListener
         message.setPriority(1);
 
 
-        turbineQueue.sendMessage("testqueue", message);
 
+        for (int i=0;i<10;i++)
+        {
+             Message outMessage =  AsyncListener.sendAndReceiveAsync("testqueue", message);
+
+             System.out.println("messagge result " + outMessage.getData());
+        }
 
 
     }
@@ -77,7 +79,7 @@ public class App implements IQueueListener
     public Message onDirectMessage(String queueName, Message message) {
 
         System.out.println("Ricevuto messaggio da " + message.getSenderClass() );
-        message.setData("CIAO RIPOSTA!");
+        message.setData("CIAO RIPOSTA! " + new Random().nextInt());
 
         return message;
     }
