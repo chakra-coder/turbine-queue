@@ -4,7 +4,10 @@ import com.google.common.base.Strings;
 import it.sistemisnc.turbine.comparator.PriorityComparator;
 import it.sistemisnc.turbine.data.Message;
 import it.sistemisnc.turbine.listeners.IQueueListener;
+import it.sistemisnc.turbine.threads.MessagesDebugger;
 import it.sistemisnc.turbine.threads.ThreadProcess;
+import lombok.Getter;
+import lombok.Setter;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -28,8 +31,11 @@ public class TurbineQueue  {
 
     private HashMap<String, List<IQueueListener>> listeners = new HashMap<String, List<IQueueListener>>();
 
-
     private HashMap<String, ExecutorService> queueExecutors = new HashMap<String, ExecutorService>();
+
+
+    @Getter @Setter
+    private boolean debugEnabled = false;
 
 
 
@@ -55,6 +61,11 @@ public class TurbineQueue  {
                 log(Level.INFO, "Inizializing thread Pool with %s threads", poolSize);
                 queueExecutors.put(queueName, Executors.newFixedThreadPool(poolSize));
                 initQueueThreads(queueName, poolSize);
+
+                if (isDebugEnabled())
+                {
+                    addQueueListener(queueName, new MessagesDebugger(queueName));
+                }
 
             }
             else
@@ -150,7 +161,18 @@ public class TurbineQueue  {
 
     }
 
+    public void shutdown()
+    {
+        log(Level.INFO, "Shutdown turbine queue...");
 
+        for (ExecutorService service : queueExecutors.values())
+        {
+            service.shutdownNow();
+        }
+
+        log(Level.INFO, "Shutdown completed, cya.." );
+
+    }
 
     protected void log(Level level, String text, Object ... args)
     {

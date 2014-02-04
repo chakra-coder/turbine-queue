@@ -64,40 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TurbineQueue.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="0" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.0" vertical-offset="1201" max-vertical-offset="2475">
-              <folding>
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#869#893#0" expanded="true" />
-                <element signature="e#971#1001#0" expanded="true" />
-                <element signature="e#1080#1105#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="1380">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AsyncListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/utils/AsyncListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="87" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#575#584#0" expanded="true" />
-              </folding>
+            <state line="22" column="87" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="795">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,17 +77,15 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/CallableMessageListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="61" column="21" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="1275">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="3" selection-start="1164" selection-end="1164" vertical-scroll-proportion="-13.148149" vertical-offset="305" max-vertical-offset="825">
+            <state line="14" column="38" selection-start="228" selection-end="228" vertical-scroll-proportion="0.2453271" vertical-offset="0" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -125,19 +94,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="11" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="705">
+            <state line="37" column="4" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadProcess.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="11" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreadProcess.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="21" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.6673387" vertical-offset="584" max-vertical-offset="2595">
+            <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="2595">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessagesDebugger.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/MessagesDebugger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="99" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="1005">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,7 +137,7 @@
       <file leaf-file-name="AppTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/it/sistemisnc/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="26" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+            <state line="23" column="26" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -184,15 +173,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/TurbineQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/PriorityComparator.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/listeners/IQueueListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/utils/AsyncListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/CallableMessageListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/MessagesDebugger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -249,7 +239,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -264,8 +254,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -538,6 +526,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -837,12 +827,13 @@
       <created>1391415051847</created>
       <updated>1391415051847</updated>
       <workItem from="1391415270464" duration="1038000" />
-      <workItem from="1391416310528" duration="12878000" />
+      <workItem from="1391416310528" duration="13066000" />
+      <workItem from="1391529435671" duration="1649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13916000" />
+    <option name="totallyTimeSpent" value="15753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
@@ -855,13 +846,12 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -873,6 +863,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -897,6 +888,81 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="0" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/utils/AsyncListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="87" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/CallableMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="21" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="3" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="11" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="21" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="2595">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/sistemisnc/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="26" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/listeners/IQueueListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/comparator/PriorityComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="31" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="780">
@@ -907,13 +973,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="33" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
-          <folding>
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#869#893#0" expanded="true" />
-            <element signature="e#971#1001#0" expanded="true" />
-            <element signature="e#1080#1105#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -931,35 +991,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="11" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="6" selection-start="7458" selection-end="7458" vertical-scroll-proportion="0.33270678" vertical-offset="2298" max-vertical-offset="2865">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="3" selection-start="1164" selection-end="1164" vertical-scroll-proportion="-13.148149" vertical-offset="305" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/it/sistemisnc/AppTest.java">
@@ -969,9 +1005,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/listeners/IQueueListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/CallableMessageListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+        <state line="61" column="21" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/utils/AsyncListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="87" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/MessagesDebugger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="99" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="1005">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="60" selection-start="4648" selection-end="4648" vertical-scroll-proportion="0.0" vertical-offset="1830" max-vertical-offset="2760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="4" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="945">
           <folding />
         </state>
       </provider>
@@ -983,54 +1056,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/CallableMessageListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="21" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="1275">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="38" column="11" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/utils/AsyncListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/listeners/IQueueListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="87" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="795">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#575#584#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="1380">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.0" vertical-offset="1021" max-vertical-offset="2475">
-          <folding>
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#869#893#0" expanded="true" />
-            <element signature="e#971#1001#0" expanded="true" />
-            <element signature="e#1080#1105#0" expanded="true" />
-          </folding>
+        <state line="13" column="4" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="21" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.6673387" vertical-offset="584" max-vertical-offset="2595">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="2595">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="38" selection-start="228" selection-end="228" vertical-scroll-proportion="0.2453271" vertical-offset="0" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>

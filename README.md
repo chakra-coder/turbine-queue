@@ -2,11 +2,17 @@
 
 ## FAQS
 
-1. Q: **What is turbineQueue?**
-2. R: Turbine queue is messaging queue with high performance process
-3. Q: **Is opensource?**
-4. R: Yes, off course
+**What is turbineQueue?**
+Turbine queue is messaging queue with high performance process
 
+## License
+
+GPL v2
+
+## Dependecies
+Turbine queue uses:
+1. Apache log4j 1.4
+2. Lombok library (for more details - http://www.projectlombok.org)
 
 
 ## Example

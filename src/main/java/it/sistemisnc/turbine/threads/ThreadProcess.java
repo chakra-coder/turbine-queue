@@ -1,6 +1,6 @@
 package it.sistemisnc.turbine.threads;
 
-import com.google.common.base.Strings;
+
 import it.sistemisnc.turbine.TurbineQueue;
 import it.sistemisnc.turbine.data.Message;
 import it.sistemisnc.turbine.listeners.IQueueListener;
@@ -123,7 +123,7 @@ public class ThreadProcess implements Runnable {
 
     private void processReplyMessage(Message message)
     {
-        if (!Strings.isNullOrEmpty(message.getTargetClass()))
+        if (message.getTargetClass() != null || (!message.getTargetClass().isEmpty()))
         {
 
             for (IQueueListener listener : getListeners())
