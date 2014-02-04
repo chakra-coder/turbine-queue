@@ -1,21 +1,61 @@
 #Turbine queue
+---
+##### Table of Contents  
+1. [FAQs](#faqs)  
+2. [License](#license)  
+3. [Dependencies](#deps)  
+4. [Installation](#installation)  
+5. [Example](#example)
 
-## FAQS
+
+
+![alt text](http://www.auto-on.it/images/stories/turbina%20garrett%20testata.jpg "Turbine queue")
+
+## FAQs 
+<a name="faqs"/>
 
 **What is turbineQueue?**
 Turbine queue is messaging queue with high performance process
 
-## License
+## License 
+<a name="license"/>
 
-GPL v2
+[GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
 
-## Dependecies
+## Dependencies
+<a name="deps"/>
+
 Turbine queue uses:
-1. Apache log4j 1.4
-2. Lombok library (for more details - http://www.projectlombok.org)
 
+1.   Apache log4j 1.4
+2.   Lombok library (for more details - http://www.projectlombok.org)
+3.   JUnit for test
+
+
+## Installation
+<a name"installation" />
+
+Open your command line:
+
+```bash
+git clone https://github.com/tgiachi/turbine-queue.git
+cd turbine-queue/
+mvn compile
+mvn install
+```
+
+Add in your ***pom.xml***
+```xml
+<dependency>
+  <groupId>org.github.tgiachi</groupId>
+  <artifactId>turbinequeue</artifactId>
+  <version>1.0-FINAL</version>
+  <packaging>jar</packaging>
+</dependency>
+```
 
 ## Example
+<a name"example" />
 
 ```java
 //Initilize new queue
@@ -50,6 +90,5 @@ public Message onDirectMessage(String queueName, Message message) {
 
    return message;
 }
-
-
+```
 
