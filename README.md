@@ -47,7 +47,7 @@ mvn install
 Add in your ***pom.xml***
 ```xml
 <dependency>
-  <groupId>org.github.tgiachi</groupId>
+  <groupId>it.sistemisnc</groupId>
   <artifactId>turbinequeue</artifactId>
   <version>1.0-FINAL</version>
   <packaging>jar</packaging>
