@@ -2,6 +2,7 @@ package it.sistemisnc.turbine.threads.network.client;
 
 import com.google.gson.Gson;
 import it.sistemisnc.turbine.data.Message;
+import it.sistemisnc.turbine.network.TurbineNetworkClient;
 import it.sistemisnc.turbine.utils.NetworkConsts;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -67,6 +68,11 @@ public class ClientHandlerSender implements Runnable {
                         if (message != null)
                         {
 
+                            message.setRemoteMessage(true);
+                            message.getExtra().put("sessionId", TurbineNetworkClient.getInstance().getSessionId());
+
+                            message.getRemoteMessageInfo().setSenderUid(TurbineNetworkClient.getInstance().getSessionId());
+
                             try
                             {
                                  outBuffer.write(NetworkConsts.covertMessageToByteArray(message));
@@ -96,7 +102,8 @@ public class ClientHandlerSender implements Runnable {
 
     public void enqueue(Message message)
     {
-        message.setRemoteMessage(true);
+
+
         messagesToSend.add(message);
     }
 

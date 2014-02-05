@@ -50,34 +50,19 @@ public class App implements IQueueListener
             TurbineNetworkClient.getInstance().start("127.0.0.1", NetworkConsts.SERVER_PORT);
 
 
+            Message message = new Message(UUID.randomUUID().toString());
+
+            message.setTargetClass("it.sistemisnc.App");
+            message.setSenderClass(this.getClass().getName());
+            message.setRemoteMessage(true);
+            message.setReplyToSender(true);
+            TurbineNetworkClient.getInstance().enqueueMessage("testqueue", message);
+
 
 
             final long start = System.nanoTime();
-            for (int i=0;i<15;i++)
-            {
-                Message message = new Message(UUID.randomUUID().toString());
-                message.setData("Message N. " + i);
-
-                TurbineNetworkClient.getInstance().enqueueMessage("testqueue", message );
-
-                try
-                {
-                   // Thread.sleep(new Random().nextInt(5000) + 2000);
-                }
-                catch (Exception ex)
-                {
-
-                }
-
-            }
-
-            Message message = new Message(UUID.randomUUID().toString());
-            TurbineQueue.getInstance().sendMessage("testqueue", message);
 
 
-            final long end = System.nanoTime();
-
-            System.out.println("Took: " + ((end - start) / 1000000) + "ms");
         }
         catch (Exception ex)
         {
@@ -94,7 +79,7 @@ public class App implements IQueueListener
     @Override
     public void onReply(String queueName, Message message) {
 
-        System.out.println("reply form message " + message.getData());
+        System.out.println("reply form message " + message.getData() + "remote? " + message.isRemoteMessage());
 
     }
 
@@ -102,6 +87,7 @@ public class App implements IQueueListener
     public Message onDirectMessage(String queueName, Message message) {
 
         System.out.println("direct message from " + message.getSenderClass() );
+
         message.setData("This is reply " + new Random().nextInt());
 
         return message;

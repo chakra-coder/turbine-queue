@@ -49,6 +49,11 @@ public class TurbineNetworkServer  {
         networkServerListener.broadcastMessage(allClients, message);
     }
 
+    public void sendMessageToId(String uid, Message message)
+    {
+        networkServerListener.sendMessageToClientId(uid, message);
+    }
+
 
 
 }

@@ -25,6 +25,9 @@ public class TurbineNetworkClient  {
     private String sessionId;
 
 
+
+
+
     private Thread thClientSender;
     private Thread thClientReceiver;
 
@@ -62,10 +65,9 @@ public class TurbineNetworkClient  {
 
     }
 
-
     public void enqueueMessage(String queueName, Message message) throws Exception {
 
-        message.getExtra().put("sessionId", getSessionId());
+
         message.setQueueName(queueName);
         clientHandlerSender.enqueue(message);
 

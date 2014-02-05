@@ -10,11 +10,11 @@ import java.io.Serializable;
 @Data
 public class NetworkMessage implements Serializable {
 
-    private String queueName;
-    private String senderUid;
+    private String senderUid = "";
+    private String targetUid = "";
 
-    private String messageClassName;
 
-    private String message;
+
+
 
 }

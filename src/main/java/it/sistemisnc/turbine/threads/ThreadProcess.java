@@ -3,7 +3,9 @@ package it.sistemisnc.turbine.threads;
 
 import it.sistemisnc.turbine.TurbineQueue;
 import it.sistemisnc.turbine.data.Message;
+import it.sistemisnc.turbine.data.NetworkMessage;
 import it.sistemisnc.turbine.listeners.IQueueListener;
+import it.sistemisnc.turbine.network.TurbineNetworkClient;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -59,7 +61,7 @@ public class ThreadProcess implements Runnable {
                 if (message != null)
                 {
 
-                   // log(Level.INFO, "Received message %s", message);
+
                     if (message.isReplyToSender())
                         processMessageWithReply(message);
                     else
@@ -105,7 +107,26 @@ public class ThreadProcess implements Runnable {
                 replyMessage.setTargetClass(message.getSenderClass());
                 replyMessage.setSenderClass(message.getTargetClass());
 
-                watchQueue.add(replyMessage);
+                if (replyMessage.isRemoteMessage())
+                {
+                    NetworkMessage networkMessage = new NetworkMessage();
+                    networkMessage.setTargetUid(replyMessage.getRemoteMessageInfo().getSenderUid());
+
+                    try
+                    {
+                        TurbineNetworkClient.getInstance().enqueueMessage(message.getQueueName(), message);
+
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+
+                }
+                else
+                {
+                     watchQueue.add(replyMessage);
+                }
 
             }
         }
@@ -126,12 +147,14 @@ public class ThreadProcess implements Runnable {
         if (message.getTargetClass() != null || (!message.getTargetClass().isEmpty()))
         {
 
-            for (IQueueListener listener : getListeners())
-            {
-                if (listener.getClass().getName().equals(message.getTargetClass()))
-                    listener.onReply(queueName, message);
 
-            }
+
+                for (IQueueListener listener : getListeners())
+                {
+                    if (listener.getClass().getName().equals(message.getTargetClass()))
+                        listener.onReply(queueName, message);
+                }
+
         }
         else
         {

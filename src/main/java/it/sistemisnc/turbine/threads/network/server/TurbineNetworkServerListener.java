@@ -112,7 +112,7 @@ public class TurbineNetworkServerListener implements Runnable {
 
 
 
-    private void sendMessageToClientId(String guid, Message message)
+    public void sendMessageToClientId(String guid, Message message)
     {
         try
         {
@@ -128,6 +128,9 @@ public class TurbineNetworkServerListener implements Runnable {
             ex.printStackTrace();
         }
     }
+
+
+
 
     public void broadcastMessage(boolean allClients, Message message)
     {

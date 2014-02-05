@@ -108,9 +108,13 @@ public class ServerHandler implements Runnable {
 
         //log(Level.INFO, "Uid: %s - Flow: %s Data: %s", message.getGuid(), message.getMessageFlow(), message.getData() );
 
-        if (message.getTargetClass() == null)
+
+        TurbineNetworkServer.getInstance().broadcastMessage(true, message);
+
+
+        if (!message.getRemoteMessageInfo().getTargetUid().isEmpty())
         {
-            TurbineNetworkServer.getInstance().broadcastMessage(true, message);
+            TurbineNetworkServer.getInstance().sendMessageToId(message.getRemoteMessageInfo().getTargetUid(), message);
         }
 
     }

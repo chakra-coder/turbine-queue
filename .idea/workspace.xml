@@ -55,6 +55,38 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/network/TurbineNetworkClient.java" line="69" class="it.sistemisnc.turbine.network.TurbineNetworkClient" package="it.sistemisnc.turbine.network">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/server/ServerHandler.java" line="116" class="it.sistemisnc.turbine.threads.network.server.ServerHandler" package="it.sistemisnc.turbine.threads.network.server">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -67,7 +99,7 @@
       <file leaf-file-name="ClientHandlerReceiver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/client/ClientHandlerReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="73" selection-start="2506" selection-end="2506" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="1560">
+            <state line="70" column="0" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0" vertical-offset="827" max-vertical-offset="1560">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,19 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="38" selection-start="2853" selection-end="2853" vertical-scroll-proportion="1.9101979" vertical-offset="125" max-vertical-offset="1545">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TurbineNetworkServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/network/TurbineNetworkServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="67" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="900">
+            <state line="51" column="31" selection-start="1511" selection-end="1526" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="975">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#520#521#0" expanded="true" />
@@ -97,13 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java">
+      <file leaf-file-name="NetworkMessage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/NetworkMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="34" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-              <folding>
-                <element signature="e#705#721#0" expanded="true" />
-              </folding>
+            <state line="13" column="33" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,7 +141,7 @@
       <file leaf-file-name="TurbineNetworkServerListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/server/TurbineNetworkServerListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="70" selection-start="3403" selection-end="3469" vertical-scroll-proportion="0.0" vertical-offset="1640" max-vertical-offset="2610">
+            <state line="114" column="10" selection-start="3042" selection-end="3042" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="2655">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#750#773#0" expanded="true" />
@@ -129,10 +150,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ThreadProcess.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="19" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.3105023" vertical-offset="606" max-vertical-offset="2805">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TurbineNetworkClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/network/TurbineNetworkClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="40" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.0" vertical-offset="590" max-vertical-offset="1485">
+            <state line="71" column="31" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.0" vertical-offset="557" max-vertical-offset="1515">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,10 +173,10 @@
       <file leaf-file-name="ClientHandlerSender.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/client/ClientHandlerSender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="39" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.0" vertical-offset="1187" max-vertical-offset="1860">
+            <state line="73" column="123" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1965">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#734#743#0" expanded="true" />
+                <element signature="e#793#802#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,7 +185,7 @@
       <file leaf-file-name="ServerHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/server/ServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="42" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="2025">
+            <state line="119" column="0" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.0" vertical-offset="1415" max-vertical-offset="2085">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/utils/AsyncListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/CallableMessageListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/MessagesDebugger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadNetworkListener.java" />
@@ -206,16 +235,17 @@
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/ClientHandlerReceiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/utils/NetworkConsts.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/network/PresentationMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/NetworkMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/utils/MessagesIds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/network/TurbineNetworkClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/client/ClientHandlerReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/server/TurbineNetworkServerListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/network/TurbineNetworkServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/client/ClientHandlerSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/NetworkMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/server/ServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/network/TurbineNetworkClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/client/ClientHandlerSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java" />
       </list>
     </option>
   </component>
@@ -952,12 +982,12 @@
       <updated>1391415051847</updated>
       <workItem from="1391415270464" duration="1038000" />
       <workItem from="1391416310528" duration="13066000" />
-      <workItem from="1391529435671" duration="27618000" />
+      <workItem from="1391529435671" duration="31512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41722000" />
+    <option name="totallyTimeSpent" value="45616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
@@ -1191,24 +1221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="-1.7307693" vertical-offset="1065" max-vertical-offset="2595">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="16" selection-start="4607" selection-end="4951" vertical-scroll-proportion="0.0" vertical-offset="2275" max-vertical-offset="2970">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/net/DatagramSocket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="176" column="11" selection-start="5436" selection-end="5436" vertical-scroll-proportion="0.3322034" vertical-offset="2024" max-vertical-offset="18570">
@@ -1265,35 +1277,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="68" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding>
+            <element signature="e#775#791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/NetworkMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="148" selection-end="162" vertical-scroll-proportion="0.17910448" vertical-offset="0" max-vertical-offset="670">
+        <state line="13" column="33" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/network/TurbineNetworkClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="40" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.0" vertical-offset="590" max-vertical-offset="1485">
+        <state line="71" column="31" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.0" vertical-offset="557" max-vertical-offset="1515">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/server/TurbineNetworkServerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="70" selection-start="3403" selection-end="3469" vertical-scroll-proportion="0.0" vertical-offset="1640" max-vertical-offset="2610">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#750#773#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/network/TurbineNetworkServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="67" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="900">
+        <state line="51" column="31" selection-start="1511" selection-end="1526" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="975">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#520#521#0" expanded="true" />
@@ -1302,37 +1313,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/data/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/server/TurbineNetworkServerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <folding>
-            <element signature="e#705#721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/client/ClientHandlerReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="73" selection-start="2506" selection-end="2506" vertical-scroll-proportion="0.0" vertical-offset="890" max-vertical-offset="1560">
+        <state line="114" column="10" selection-start="3042" selection-end="3042" vertical-scroll-proportion="0.0" vertical-offset="1580" max-vertical-offset="2655">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#750#773#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/client/ClientHandlerSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="39" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.0" vertical-offset="1187" max-vertical-offset="1860">
+        <state line="73" column="123" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1965">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#734#743#0" expanded="true" />
+            <element signature="e#793#802#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/TurbineQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="32" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.26567164" vertical-offset="1622" max-vertical-offset="2775">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/server/ServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="42" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="2025">
+        <state line="119" column="0" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.0" vertical-offset="1415" max-vertical-offset="2085">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1341,7 +1351,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="38" selection-start="2853" selection-end="2853" vertical-scroll-proportion="1.9101979" vertical-offset="125" max-vertical-offset="1545">
+        <state line="81" column="109" selection-start="2286" selection-end="2286" vertical-scroll-proportion="0.0" vertical-offset="678" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/network/client/ClientHandlerReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0" vertical-offset="827" max-vertical-offset="1560">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/sistemisnc/turbine/threads/ThreadProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="19" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.3105023" vertical-offset="606" max-vertical-offset="2805">
           <folding />
         </state>
       </provider>

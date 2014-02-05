@@ -22,6 +22,8 @@ public class Message implements Serializable {
 
     private boolean remoteMessage;
 
+    private NetworkMessage remoteMessageInfo = new NetworkMessage();
+
     private int priority = 10;
     private String senderClass;
     private String targetClass;
