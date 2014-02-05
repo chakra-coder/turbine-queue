@@ -98,6 +98,12 @@ public class TurbineNetworkServerListener implements Runnable {
     }
 
 
+    public void disconnectClient(String uid)
+    {
+        connectedClient.remove(uid);
+    }
+
+
     protected void sendPresentationMessage(String clientID)
     {
         Message message = new Message(UUID.randomUUID().toString());

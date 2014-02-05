@@ -54,6 +54,11 @@ public class TurbineNetworkServer  {
         networkServerListener.sendMessageToClientId(uid, message);
     }
 
+    public void disconnectClient(String uid)
+    {
+        networkServerListener.disconnectClient(uid);
+    }
+
 
 
 }
