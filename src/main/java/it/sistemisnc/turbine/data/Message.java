@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.UUID;
 
 /**
@@ -14,22 +15,22 @@ import java.util.UUID;
 public class Message implements Serializable {
 
 
-    public enum MessageFlow {
-        INPUT, OUTPUT
-    }
+    public enum MessageFlow { INPUT, OUTPUT }
 
     private int messageType;
+    private String queueName;
+
+    private boolean remoteMessage;
+
     private int priority = 10;
     private String senderClass;
     private String targetClass;
     private String guid;
     private MessageFlow messageFlow = MessageFlow.INPUT;
     private boolean replyToSender = false;
+    private HashMap<String, Object> extra = new HashMap<String, Object>();
 
-
-
-    private Serializable data;
-
+    private Object data;
 
     public Message(String senderClass, Serializable data)
     {

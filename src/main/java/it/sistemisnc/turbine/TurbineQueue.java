@@ -1,6 +1,6 @@
 package it.sistemisnc.turbine;
 
-import com.google.common.base.Strings;
+
 import it.sistemisnc.turbine.comparator.PriorityComparator;
 import it.sistemisnc.turbine.data.Message;
 import it.sistemisnc.turbine.listeners.IQueueListener;
@@ -139,7 +139,7 @@ public class TurbineQueue  {
 
             if (queues.get(queueName) != null)
             {
-                if (Strings.isNullOrEmpty(message.getGuid()))
+                if (message.getGuid() != null)
                     message.setGuid(UUID.randomUUID().toString());
 
 
