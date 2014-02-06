@@ -7,7 +7,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 /**
- * Created by squid on 05/02/14.
+ * Start turbine server
  */
 public class TurbineNetworkServer  {
 

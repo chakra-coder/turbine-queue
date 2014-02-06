@@ -26,12 +26,10 @@ public class App implements IQueueListener
 
         PatternLayout layout = new PatternLayout("%d{ISO8601} [%t] %-5p %c %x - %m%n");
 
-//Add console appender to root logger
+        //Add console appender to root logger
 
         Logger.getRootLogger().addAppender(new ConsoleAppender(layout));
         new App();
-
-
 
     }
 

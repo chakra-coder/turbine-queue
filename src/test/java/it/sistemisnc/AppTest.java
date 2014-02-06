@@ -1,5 +1,6 @@
 package it.sistemisnc;
 
+import it.sistemisnc.turbine.TurbineQueue;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -29,10 +30,13 @@ public class AppTest
     }
 
     /**
-     * Rigourous Test :-)
+     * Start Server
      */
     public void testApp()
     {
-        assertTrue( true );
+        assertNotNull(TurbineQueue.getInstance());
+
+
+
     }
 }

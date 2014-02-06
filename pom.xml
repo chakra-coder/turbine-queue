@@ -7,12 +7,44 @@
   <version>1.0-FINAL</version>
   <packaging>jar</packaging>
 
-  <name>turbinequeue</name>
-  <url>http://maven.apache.org</url>
+  <name>turbine-queue</name>
+  <description>Turbine queue, high performance runtime messaging queue</description>
+  <url>https://github.com/tgiachi/turbine-queue</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+      <!-- Dependecies versions -->
+      <lombok.version>1.12.4</lombok.version>
+      <log4j.version>1.2.17</log4j.version>
+      <gson.version>2.2.4</gson.version>
   </properties>
+
+    <licenses>
+        <license>
+            <name>GPL v2</name>
+            <url>http://www.gnu.org/licenses/gpl-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/tgiachi/turbine-queue/issues</url>
+    </scm>
+
+
+    <developers>
+        <developer>
+            <id>tgiachi</id>
+            <name>Tommaso Giachi</name>
+            <email>squid at stormwind.it</email>
+            <organization>Sistemi S.n.c.</organization>
+            <organizationUrl>http://www.sistemisnc.it</organizationUrl>
+            <roles>
+                <role>Project Lead</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
 
   <dependencies>
     <dependency>
@@ -25,30 +57,28 @@
     <dependency>
           <groupId>org.projectlombok</groupId>
           <artifactId>lombok</artifactId>
-          <version>1.12.4</version>
+          <version>${lombok.version}</version>
           <scope>provided</scope>
     </dependency>
 
     <dependency>
           <groupId>log4j</groupId>
           <artifactId>log4j</artifactId>
-          <version>1.2.17</version>
+          <version>${log4j.version}</version>
     </dependency>
 
     <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
-        <version>2.2.4</version>
+        <version>${gson.version}</version>
     </dependency>
-
-
-
-
 
   </dependencies>
 
 
     <build>
+        <sourceDirectory>/src/main/java/</sourceDirectory>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
