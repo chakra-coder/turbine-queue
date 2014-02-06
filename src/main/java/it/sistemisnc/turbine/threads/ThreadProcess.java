@@ -2,7 +2,9 @@ package it.sistemisnc.turbine.threads;
 
 
 import it.sistemisnc.turbine.TurbineQueue;
+import it.sistemisnc.turbine.annotation.TurbineQueueFilter;
 import it.sistemisnc.turbine.data.Message;
+import it.sistemisnc.turbine.data.MessageFlowType;
 import it.sistemisnc.turbine.data.NetworkMessage;
 import it.sistemisnc.turbine.listeners.IQueueListener;
 import it.sistemisnc.turbine.network.TurbineNetworkClient;
@@ -13,10 +15,11 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * Created by squid on 03/02/14.
+ * Core of messaging processor
  */
 public class ThreadProcess implements Runnable {
 
+    private Logger logger = Logger.getLogger(this.getClass()) ;
 
     private Queue<Message> watchQueue;
     private String queueName;
@@ -28,7 +31,6 @@ public class ThreadProcess implements Runnable {
     private boolean started = false;
 
 
-    private Logger logger = Logger.getLogger(this.getClass()) ;
 
 
 
@@ -42,7 +44,6 @@ public class ThreadProcess implements Runnable {
         log(Level.INFO, "Starting queue thread for queue %s, waiting for messages...", queueName);
 
         started = true;
-
 
     }
 
@@ -65,7 +66,7 @@ public class ThreadProcess implements Runnable {
                     if (message.isReplyToSender())
                         processMessageWithReply(message);
                     else
-                    if (message.getMessageFlow() == Message.MessageFlow.OUTPUT)
+                    if (message.getMessageFlow() == MessageFlowType.OUTPUT)
                         processReplyMessage(message);
                     else
                         processBroadcastMessage(message);
@@ -102,7 +103,7 @@ public class ThreadProcess implements Runnable {
             {
                 Message replyMessage = listener.onDirectMessage(queueName, message);
 
-                replyMessage.setMessageFlow(Message.MessageFlow.OUTPUT);
+                replyMessage.setMessageFlow(MessageFlowType.OUTPUT);
                 replyMessage.setReplyToSender(false);
                 replyMessage.setTargetClass(message.getSenderClass());
                 replyMessage.setSenderClass(message.getTargetClass());
@@ -121,7 +122,6 @@ public class ThreadProcess implements Runnable {
                     {
 
                     }
-
                 }
                 else
                 {
@@ -136,7 +136,19 @@ public class ThreadProcess implements Runnable {
     {
         for (IQueueListener listener: getListeners())
         {
-            listener.onMessage(queueName, message);
+
+            if (listener.getClass().isAnnotationPresent(TurbineQueueFilter.class) == true)
+            {
+                 TurbineQueueFilter annotation = listener.getClass().getAnnotation(TurbineQueueFilter.class);
+
+                if (isMessageTypePresent(annotation, message))
+                    listener.onMessage(queueName, message);
+            }
+            else
+            {
+                listener.onMessage(queueName, message);
+            }
+
 
         }
 
@@ -160,6 +172,18 @@ public class ThreadProcess implements Runnable {
         {
             log(Level.FATAL, "Can't delivery message id %s (%s) because the message don't have targetClass property!", message.getGuid(), message.getClass().getName());
         }
+
+    }
+
+    private boolean isMessageTypePresent(TurbineQueueFilter annotation, Message message)
+    {
+        for (int i=0;i<annotation.filters().length;i++)
+        {
+            if (annotation.filters()[i] == message.getMessageType())
+                return  true;
+        }
+
+        return  false;
 
     }
 

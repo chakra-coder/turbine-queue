@@ -13,7 +13,7 @@ import java.io.DataOutputStream;
 import java.net.Socket;
 
 /**
- * Created by squid on 05/02/14.
+ * Therad for manage connections with clients
  */
 public class ServerHandler implements Runnable {
     private static Logger logger = Logger.getLogger(ServerHandler.class);
@@ -26,10 +26,6 @@ public class ServerHandler implements Runnable {
 
 
 
-
-
-
-
     public ServerHandler(Socket socket)
     {
         this.socket = socket;
@@ -39,7 +35,7 @@ public class ServerHandler implements Runnable {
 
         try
         {
-             this.dataOutput = new DataOutputStream(socket.getOutputStream());
+           this.dataOutput = new DataOutputStream(socket.getOutputStream());
         }
         catch (Exception ex)
         {
@@ -57,11 +53,8 @@ public class ServerHandler implements Runnable {
 
                     try
                     {
-
-
                         while(true)
                         {
-
                              if (!socket.isClosed())
                              {
                                  try
@@ -118,7 +111,7 @@ public class ServerHandler implements Runnable {
     }
 
 
-    public void handleBuffer(byte[] byteBuffer) throws Exception
+    private void handleBuffer(byte[] byteBuffer) throws Exception
     {
         String json = new String(CompressUtil.decompress(byteBuffer));
         Message message = gson.fromJson(json, Message.class);

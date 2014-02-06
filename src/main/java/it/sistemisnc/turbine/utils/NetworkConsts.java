@@ -10,9 +10,8 @@ import java.util.zip.GZIPOutputStream;
 /**
  * Created by squid on 05/02/14.
  */
-public class NetworkConsts{
+public class NetworkConsts {
 
-    public static int RECV_BUFFER_SIZE = 8192;
     public static int SERVER_PORT = 8903;
     public static int SERVER_MAX_CONNECTIONS = 10;
 

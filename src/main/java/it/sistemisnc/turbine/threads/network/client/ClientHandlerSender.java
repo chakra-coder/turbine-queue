@@ -13,7 +13,7 @@ import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * Created by squid on 05/02/14.
+ * Thread runner for sending message to server
  */
 public class ClientHandlerSender implements Runnable {
 
@@ -25,8 +25,9 @@ public class ClientHandlerSender implements Runnable {
     private DataOutputStream outBuffer;
 
 
+
     private Queue<Message> messagesToSend = new LinkedBlockingQueue<Message>();
-    private Gson gson;
+
 
 
 
@@ -44,11 +45,7 @@ public class ClientHandlerSender implements Runnable {
 
         try
         {
-
-            gson = new Gson();
             outBuffer = new DataOutputStream(socket.getOutputStream());
-
-
         }
         catch (Exception ex)
         {
@@ -59,8 +56,6 @@ public class ClientHandlerSender implements Runnable {
 
         while (true)
         {
-
-
                 while (started)
                 {
                         Message message = messagesToSend.poll();
@@ -91,19 +86,17 @@ public class ClientHandlerSender implements Runnable {
                         catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-
                  }
         }
-
-
-
     }
 
 
+    /**
+     * Enqueue new message for send to server
+     * @param message
+     */
     public void enqueue(Message message)
     {
-
-
         messagesToSend.add(message);
     }
 

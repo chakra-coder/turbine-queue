@@ -3,7 +3,7 @@ package it.sistemisnc.turbine.listeners;
 import it.sistemisnc.turbine.data.Message;
 
 /**
- * Created by squid on 03/02/14.
+ * Listener for turbine queue
  */
 public interface IQueueListener {
 

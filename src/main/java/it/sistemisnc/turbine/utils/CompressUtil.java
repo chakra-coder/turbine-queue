@@ -20,6 +20,13 @@ public class CompressUtil {
     private static Key key;
 
 
+    /**
+     * Compress byte array using Deflater/Inflater method
+     * @param data
+     * @return
+     * @throws IOException
+     * @throws Exception
+     */
     public static byte[] compress(byte[] data) throws IOException, Exception {
         Deflater deflater = new Deflater();
         deflater.setLevel(Deflater.BEST_COMPRESSION);
@@ -42,6 +49,14 @@ public class CompressUtil {
         return output;
     }
 
+    /**
+     * Decompress byte array using Deflater/Inflater method
+     * @param data
+     * @return
+     * @throws IOException
+     * @throws DataFormatException
+     * @throws Exception
+     */
     public static byte[] decompress(byte[] data) throws IOException, DataFormatException, Exception {
 
         data = decrypt(data);
@@ -65,7 +80,12 @@ public class CompressUtil {
     }
 
 
-
+    /**
+     * Encrypt byte array using AES algorithm
+     * @param Data
+     * @return
+     * @throws Exception
+     */
     public static byte[] encrypt(byte[] Data) throws Exception {
         Key key = generateKey();
         Cipher c = Cipher.getInstance(ALGO);
@@ -75,6 +95,12 @@ public class CompressUtil {
         return encVal;
     }
 
+    /**
+     * Decrypt byte array using AES algorithm
+     * @param encryptedData
+     * @return
+     * @throws Exception
+     */
     public static byte[] decrypt(byte[] encryptedData) throws Exception {
         Key key = generateKey();
         Cipher c = Cipher.getInstance(ALGO);

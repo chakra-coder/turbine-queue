@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.PriorityBlockingQueue;
 
 /**
- * Created by squid on 03/02/14.
+ * Create a message queue with network support
  */
 public class TurbineQueue  {
 
@@ -36,7 +36,6 @@ public class TurbineQueue  {
 
     @Getter @Setter
     private boolean debugEnabled = false;
-
 
 
     public boolean addQueue(String queueName)

@@ -5,7 +5,7 @@ import it.sistemisnc.turbine.data.Message;
 import java.util.UUID;
 
 /**
- * Created by squid on 05/02/14.
+ * Factory for create messages
  */
 public class MessagesFactory {
 
@@ -14,6 +14,7 @@ public class MessagesFactory {
         Message message = new Message(UUID.randomUUID().toString());
         message.setMessageType(messageType);
         message.setData(data);
+        message.setSenderClass(senderClass.getName());
 
         return message;
     }

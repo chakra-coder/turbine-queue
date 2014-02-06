@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.concurrent.*;
 
 /**
- * Created by squid on 03/02/14.
+ * Class for send messages in async
  */
 public class AsyncListener {
 
@@ -31,8 +31,6 @@ public class AsyncListener {
 
 
             return outMessage;
-
-
 
         }
         catch (Exception ex)

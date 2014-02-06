@@ -11,7 +11,12 @@ import org.apache.log4j.Logger;
 import java.net.Socket;
 
 /**
- * Created by squid on 04/02/14.
+ * Network client for turbine queue, for now you can subscribe one queue
+ *
+ *
+ * Example:
+ *
+ * TurbineNetworkClient.getInstance().connect(address, port);
  */
 public class TurbineNetworkClient  {
 
@@ -22,10 +27,10 @@ public class TurbineNetworkClient  {
 
 
     @Getter @Setter
+    /**
+     * When you connect, the server reply back with sessionId
+     */
     private String sessionId;
-
-
-
 
 
     private Thread thClientSender;
@@ -36,9 +41,13 @@ public class TurbineNetworkClient  {
     private ClientHandlerReceiver clientHandlerReceiver;
 
 
-
-
-    public void start(String address, int port)
+    /**
+     * Connect to turbine network server
+     * @param address of server
+     * @param port of server, default is NetworkConsts.SERVER_PORT
+     * @throws Exception
+     */
+    public void start(String address, int port) throws Exception
     {
 
         try
@@ -65,14 +74,25 @@ public class TurbineNetworkClient  {
 
     }
 
+    /**
+     * Send new message to server
+     * @param queueName
+     * @param message
+     * @throws Exception
+     */
     public void enqueueMessage(String queueName, Message message) throws Exception {
 
 
-        message.setQueueName(queueName);
-        clientHandlerSender.enqueue(message);
-
+        if (clientHandlerSender != null)
+        {
+             message.setQueueName(queueName);
+             clientHandlerSender.enqueue(message);
+        }
     }
 
+    /**
+     * When client receive sessionId from server, starts messages queue
+     */
     public void startClientSender()
     {
         clientHandlerSender.start();

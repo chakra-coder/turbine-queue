@@ -14,7 +14,7 @@ import java.io.DataInputStream;
 import java.net.Socket;
 
 /**
- * Created by squid on 05/02/14.
+ * Thread runner for receive/process incoming messages
  */
 public class ClientHandlerReceiver implements Runnable {
 
@@ -45,7 +45,8 @@ public class ClientHandlerReceiver implements Runnable {
                 {
                     while(true)
                     {
-                        int length = inFromClient.readInt();                    // read length of incoming message
+                        int length = inFromClient.readInt();
+                         // read length of incoming message
                         if(length>0)
                         {
                             byte[] message = new byte[length];
@@ -66,7 +67,7 @@ public class ClientHandlerReceiver implements Runnable {
         }
     }
 
-    public void handleBuffer(byte[] byteBuffer) throws Exception
+    private void handleBuffer(byte[] byteBuffer) throws Exception
     {
         String json = new String(CompressUtil.decompress(byteBuffer));
         Message message = gson.fromJson(json, Message.class);

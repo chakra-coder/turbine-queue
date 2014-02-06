@@ -1,7 +1,7 @@
 package it.sistemisnc.turbine.utils;
 
 /**
- * Created by squid on 05/02/14.
+ * Utility class for store messages Id
  */
 public class MessagesIds {
 

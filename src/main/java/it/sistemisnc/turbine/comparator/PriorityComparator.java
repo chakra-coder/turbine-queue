@@ -5,7 +5,7 @@ import it.sistemisnc.turbine.data.Message;
 import java.util.Comparator;
 
 /**
- * Created by squid on 03/02/14.
+ * Comparator for messages priorities
  */
 public class PriorityComparator implements Comparator<Message> {
 

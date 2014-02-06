@@ -7,7 +7,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 /**
- * Created by squid on 04/02/14.
+ * Messages Debugger. Listens on queue and print all messages
  */
 public class MessagesDebugger implements IQueueListener {
 

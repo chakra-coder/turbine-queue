@@ -47,7 +47,7 @@ public class App implements IQueueListener
         {
             TurbineNetworkServer.getInstance().start();
 
-            TurbineNetworkClient.getInstance().start("127.0.0.1", NetworkConsts.SERVER_PORT);
+            //TurbineNetworkClient.getInstance().start("127.0.0.1", NetworkConsts.SERVER_PORT);
 
 
             Message message = new Message(UUID.randomUUID().toString());
@@ -56,8 +56,9 @@ public class App implements IQueueListener
             message.setSenderClass(this.getClass().getName());
             message.setRemoteMessage(true);
             message.setReplyToSender(true);
-            TurbineNetworkClient.getInstance().enqueueMessage("testqueue", message);
 
+            //TurbineNetworkClient.getInstance().enqueueMessage("testqueue", message);
+            TurbineQueue.getInstance().sendMessage("testqueue", message);
 
 
             final long start = System.nanoTime();

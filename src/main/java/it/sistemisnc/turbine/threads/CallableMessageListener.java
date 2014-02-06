@@ -9,7 +9,7 @@ import java.util.UUID;
 import java.util.concurrent.Callable;
 
 /**
- * Created by squid on 03/02/14.
+ * Send direct message and wait 10 seconds for reply
  */
 public class CallableMessageListener implements Callable<Message>, IQueueListener{
 
